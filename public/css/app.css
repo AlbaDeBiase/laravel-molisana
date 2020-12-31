@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  background-image: url("/images/sfondo-pag-prodotti.jpg");
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.logo-la-molisana {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.lista-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.lista-header li {
+  display: inline-block;
+}
+
+.lista-header li a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #001942;
+}
+
+.lista-header li a:hover {
+  background-color: #b3e5fc;
+}
+
+.descrizione-prodotti {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.descrizione-prodotti .card {
+  width: 350px;
+  position: relative;
+}
+
+.descrizione-prodotti .card img {
+  padding: 5px;
+  width: 100%;
+}
+
+.descrizione-prodotti .card .hover-effect {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.descrizione-prodotti .card .hover-effect a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.descrizione-prodotti .card:hover .hover-effect {
+  display: block;
+  background-color: rgba(244, 244, 244, 0.6);
+}
+

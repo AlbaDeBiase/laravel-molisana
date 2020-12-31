@@ -1,0 +1,25 @@
+.logo-la-molisana{
+    @include flex-center;
+}
+
+.lista-header{
+    @include flex-center;
+    list-style-type: none;
+    padding-top:20px;
+
+    li{
+        display: inline-block;
+
+        a{
+            text-decoration: none;
+            padding:10px;
+            font-size:18px;
+            font-weight: bold;
+            color:$header-color;
+
+            &:hover{
+                background-color: $header-color-hover;
+            }
+        }
+    }
+}

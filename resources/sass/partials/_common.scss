@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.wrap{
+    // background-color: $background-content;
+    background-image: $sfondo-pag-prodotti;
+}
+
+.container{
+    width: 1170px;
+    margin:auto;
+}

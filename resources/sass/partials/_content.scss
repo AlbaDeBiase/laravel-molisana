@@ -1,0 +1,42 @@
+.descrizione-prodotti{
+    @include flex-center;
+    padding-top: 50px;
+
+
+.card{
+    width: 350px;
+    position: relative;
+
+        img{
+        padding: 5px;
+        width: 100%;
+    }
+
+
+.hover-effect {
+    display:none;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+        a{
+            text-decoration: none;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color:black;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+            &:hover .hover-effect {
+                display:block;
+                background-color: rgb(244, 244, 244,0.6);
+
+        }
+    }
+}
