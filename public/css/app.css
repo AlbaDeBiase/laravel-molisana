@@ -13,6 +13,14 @@
   margin: auto;
 }
 
+.dettaglio-prodotto img {
+  display: block;
+}
+
+.descrizione {
+  background-color: #b8dae4;
+}
+
 .logo-la-molisana {
   display: flex;
   justify-content: center;
