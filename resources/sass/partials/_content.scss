@@ -1,6 +1,10 @@
 .descrizione-prodotti{
-    @include flex-center;
+    @include flex-base;
     padding-top: 50px;
+        h1{
+            text-transform: uppercase;
+            color: $testo_prodotto;
+        }
 
 
 .card{
@@ -42,5 +46,6 @@
 }
 
 .card-tipo{
-    @include flex-center;
+    @include flex-base;
+    padding-bottom: 15px;
 }

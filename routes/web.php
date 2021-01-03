@@ -21,14 +21,14 @@ Route::get('/prodotti', function () {
     $array_pasta = config('pasta');
     $collection_pasta = collect($array_pasta);
     $pasta_lunga = $collection_pasta->where('tipo', 'lunga');
-        $pasta_corta = $collection_pasta->where('tipo', 'corta');
-            $pasta_cortissima = $collection_pasta->where('tipo', 'cortissima');
+    $pasta_corta = $collection_pasta->where('tipo', 'corta');
+    $pasta_cortissima = $collection_pasta->where('tipo', 'cortissima');
 
     $data = [
         'formati' => [
-            'lunga'=>$pasta_lunga,
-            'corta'=>$pasta_corta,
-            'cortissima'=>$pasta_cortissima
+            'Le lunghe'=>$pasta_lunga,
+            'Le corte'=>$pasta_corta,
+            'Le cortissime'=>$pasta_cortissima
             ]
     ];
     // dd($data);
