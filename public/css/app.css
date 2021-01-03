@@ -16,6 +16,7 @@
 .dettaglio-prodotto h1 {
   text-align: center;
   padding-top: 30px;
+  color: #0f3d87;
 }
 .dettaglio-prodotto img {
   display: block;
@@ -28,6 +29,8 @@
 
 .descrizione p {
   line-height: 1.4;
+  padding-bottom: 20px;
+  color: #0f3d87;
 }
 
 .logo-la-molisana {

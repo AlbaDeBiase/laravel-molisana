@@ -25,6 +25,7 @@
     h1{
         text-align: center;
         padding-top: 30px;
+        color: $testo_prodotto;
     }
     img{
         display:block;
@@ -39,5 +40,7 @@
 .descrizione {
     p{
         line-height: 1.4;
+        padding-bottom: 20px;
+        color: $testo_prodotto;
     }
 }
