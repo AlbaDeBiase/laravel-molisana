@@ -11,7 +11,7 @@
     flex-wrap: wrap;
 }
 
-.wrap{
+.wrap-prodotti{
     // background-color: $background-content;
     background-image: $sfondo-pag-prodotti;
 }
@@ -22,10 +22,22 @@
 }
 
 .dettaglio-prodotto {
+    h1{
+        text-align: center;
+        padding-top: 30px;
+    }
     img{
         display:block;
+        width: 100%;
         }
     }
-.descrizione{
+
+.wrapper-dettagli{
     background-color: #b8dae4;
+}
+
+.descrizione {
+    p{
+        line-height: 1.4;
+    }
 }

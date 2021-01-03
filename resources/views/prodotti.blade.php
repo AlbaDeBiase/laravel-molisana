@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="wrap">
+<div class="wrap-prodotti">
         <div class="descrizione-prodotti">
             <div class="container">
                     @foreach ($formati as $tipo => $pasta)

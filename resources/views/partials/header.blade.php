@@ -1,6 +1,6 @@
 <header>
     <div class="logo-la-molisana">
-        <img src="{{'images/logo-la-molisana.png'}}" alt="">
+        <img src="{{'../images/logo-la-molisana.png'}}" alt="">
     </div>
     <div class="menu-header">
         <ul class="lista-header">
