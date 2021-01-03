@@ -3,20 +3,25 @@
 @section('content')
 
 <div class="wrap">
-
-    <div class="container">
         <div class="descrizione-prodotti">
-            @foreach ($formati as $formato)
-                <div class="card">
-                    <img src="{{$formato['src']}}" alt="{{$formato['titolo']}}">
-                    <div class="hover-effect">
-                        <a href="#">{{$formato['titolo']}}</a>
-                    </div>
-                </div>
-            @endforeach
+            <div class="container">
+                    @foreach ($formati as $tipo => $pasta)
+                        <h1>{{$tipo}}</h1>
+                            <div class="card-tipo">
+                                @foreach ($pasta as $indice =>$formato)
+                                    <div class="card">
+                                         <img src="{{$formato['src']}}" alt="{{$formato['titolo']}}">
+                                            <div class="hover-effect">
+                                                <a href="{{route('dettagli', ['id' =>$indice])}}">{{$formato['titolo']}}</a>
+                                            </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                    @endforeach
+            </div>
         </div>
-    </div>
-</div>
+
+
 
 @endsection
 

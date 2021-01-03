@@ -62,7 +62,7 @@
 }
 
 .descrizione-prodotti .card {
-  width: 350px;
+  width: calc(100% / 3);
   position: relative;
 }
 
@@ -93,5 +93,12 @@
 .descrizione-prodotti .card:hover .hover-effect {
   display: block;
   background-color: rgba(244, 244, 244, 0.6);
+}
+
+.card-tipo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 

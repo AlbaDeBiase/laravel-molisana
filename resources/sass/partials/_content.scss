@@ -4,7 +4,7 @@
 
 
 .card{
-    width: 350px;
+    width: calc(100% / 3);
     position: relative;
 
         img{
@@ -39,4 +39,8 @@
 
         }
     }
+}
+
+.card-tipo{
+    @include flex-center;
 }
