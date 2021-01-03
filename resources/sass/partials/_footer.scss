@@ -1,0 +1,36 @@
+.footer-container {
+    display:flex;
+    color: $footer_color;
+    background-image: url('../images/footer-montagne-bottom.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom:150px;
+        img{
+            display:block;
+        }
+}
+
+
+.info-azienda, .pastificio, .collezioni{
+    width: 100%;
+    padding-top:30px;
+}
+
+.pastificio, .collezioni{
+    h3{
+        padding-bottom: 15px;
+        padding-top: 15px;
+        color:#9a9a9a;
+    }
+        ul{
+            li{
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color:$footer_color;
+                    line-height: 1.5;
+                    font-size: 16px;
+                }
+            }
+        }
+}

@@ -104,3 +104,35 @@
   text-align: center;
   flex-wrap: wrap;
 }
+
+.footer-container {
+  display: flex;
+  color: #bab8b8;
+  background-image: url("../images/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 150px;
+}
+.footer-container img {
+  display: block;
+}
+
+.info-azienda, .pastificio, .collezioni {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.pastificio h3, .collezioni h3 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #9a9a9a;
+}
+.pastificio ul li, .collezioni ul li {
+  list-style-type: none;
+}
+.pastificio ul li a, .collezioni ul li a {
+  text-decoration: none;
+  color: #bab8b8;
+  line-height: 1.5;
+  font-size: 16px;
+}
