@@ -6,22 +6,28 @@
     @include flex-center;
     list-style-type: none;
     padding-top:20px;
-    padding-bottom: 20px;
+
 
     li{
         display: inline-block;
 
         a{
             text-decoration: none;
-            padding:10px;
+            padding:5px;
             font-size:18px;
             font-weight: bold;
             color:$header-color;
+            line-height: 1.5;
 
             &:hover{
                 background-color: $header-color-hover;
-                padding-bottom: 20px;
+
             }
         }
     }
+}
+
+.active {
+    background-color: $header-color-hover;
+
 }

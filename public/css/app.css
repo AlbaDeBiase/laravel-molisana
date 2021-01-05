@@ -51,21 +51,24 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 .lista-header li {
   display: inline-block;
 }
 .lista-header li a {
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   font-size: 18px;
   font-weight: bold;
   color: #001942;
+  line-height: 1.5;
 }
 .lista-header li a:hover {
   background-color: #b3e5fc;
-  padding-bottom: 20px;
+}
+
+.active {
+  background-color: #b3e5fc;
 }
 
 .descrizione-prodotti {
