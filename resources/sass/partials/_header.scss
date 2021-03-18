@@ -5,23 +5,32 @@
 .lista-header{
     @include flex-center;
     list-style-type: none;
-    padding-top:20px;
+    // padding-top:20px;
+    // padding-bottom:20px;
 
 
     li{
         display: inline-block;
+        padding-top:20px;
+        padding-bottom:20px;
+        // padding-left:5px;
+        // padding-right:5px;
 
         a{
             text-decoration: none;
-            padding:5px;
+            padding-top:20px;
+            padding-bottom:20px;
+            padding-left:10px;
+            padding-right:10px;
             font-size:18px;
             font-weight: bold;
             color:$header-color;
-            line-height: 1.5;
+
 
             &:hover{
                 background-color: $header-color-hover;
-
+                // padding-top:20px;
+                // padding-bottom:20px;
             }
         }
     }

@@ -37,14 +37,34 @@ Route::get('/prodotti', function () {
 
 Route::get('/dettagli/{id}', function ($id) {
     $array_pasta=config('pasta');
-    if (is_numeric($id) && $id>0 && $id<count($array_pasta)) {
+    if (is_numeric($id) && $id>=0 && $id<count($array_pasta)) {
         // code...
     }else {
         abort(404);
     }
     $prodotto= $array_pasta[$id];
+
+    $prev = $id - 1;
+    $next = $id + 1;
+
+       if ($id == 0) {
+           $prev = count($array_pasta) - 1;
+       }
+
+       if ($id == count($array_pasta) - 1) {
+           $next = 0;
+       }
+
+
+
     $data = [
-        'formato' => $prodotto
+
+        'formato' => $prodotto,
+        'prodotti'=>$array_pasta,
+        'commands' => [
+                'next' => $next,
+                'prev' => $prev
+            ]
     ];
     // dd($prodotto);
     return view('dettagli',$data);

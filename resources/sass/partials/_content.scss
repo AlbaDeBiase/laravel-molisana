@@ -49,3 +49,148 @@
     @include flex-base;
     padding-bottom: 15px;
 }
+
+.dettaglio-griglia{
+    table-layout: fixed;
+    width:100%;
+    margin:auto;
+    color:$testo_prodotto;
+    border-collapse: collapse;
+    background-color: #b8dae4;
+
+
+
+}
+
+.text-size{
+    font-size:40px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 200;
+
+}
+
+th{
+    border-bottom: 1px solid black;
+    border-left:1px solid black;
+    padding: 20px 20px 5px 20px;
+        line-height: 1;
+
+}
+.border-none{
+    border-left:none;
+}
+
+
+#freccia_destra,#freccia_sinistra{
+        visibility: visible;
+        position: fixed;
+        top: 38%;
+        background-color: #dfdfdf;
+        background-color: rgba(0,0,0,.3);
+        width: 65px;
+        height: 130px;
+
+        i{
+            position: absolute;
+            top: 45%;
+            left: 30%;
+        }
+}
+
+#freccia_sinistra{
+    right: 0;
+}
+
+#freccia_destra{
+    left: 0;
+}
+
+// #freccia_destra:hover, #freccia_sinistra:hover{
+//     // visibility: hidden;
+// }
+
+
+#foto_prev, #foto_next, {
+    visibility: hidden;
+
+
+    &:hover{
+        // visibility: visible;
+    }
+    img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#foto_prev{
+    position: fixed;
+    top: 38%;
+    left: 0;
+    width: 250px;
+    height: 125px;
+    background-color: #000000c2;
+    transition:2s;
+
+    // border:1px solid red;
+
+    img{
+        position: absolute;
+        left: 0;
+    }
+}
+
+#titolo_prev{
+    position: fixed;
+    top: 55%;
+    left: 0;
+    width: 250px;
+    height: 60px;
+    background-color: white;
+
+    p{
+        color:black;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size:14px;
+        top: 30%;
+        right: 10%;
+        position: absolute;
+    }
+}
+
+#foto_next{
+    position: fixed;
+    top: 38%;
+    right: 0;
+    width: 250px;
+    height: 125px;
+    background-color: #000000c2;
+    transition:2s;
+    // border:1px solid red;
+    img{
+        position: absolute;
+        right: 0;
+
+    }
+}
+
+#titolo_next{
+    position: fixed;
+    top: 55%;
+    right: 0;
+    width: 250px;
+    height: 60px;
+    background-color: white;
+
+    p{
+        color:black;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size:14px;
+        top: 30%;
+        left: 10%;
+        position: absolute;
+    }
+}

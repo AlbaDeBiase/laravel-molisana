@@ -20,6 +20,10 @@ body{
     font-family: $body_font;
 }
 
+.uppercase{
+    text-transform: uppercase;
+}
+
 .wrap-prodotti{
     // background-color: $background-content;
     background-image: $sfondo-pag-prodotti;
@@ -31,10 +35,16 @@ body{
 }
 
 .dettaglio-prodotto {
+        background-color: #b8dae4;
     h1{
         text-align: center;
-        padding-top: 30px;
-        color: $testo_prodotto;
+        padding-top: 15px;
+        color:#001942;
+        position: relative;
+        border-bottom: 1px solid white;
+        padding-bottom: 15px;
+        font-size:20px;
+        text-transform: uppercase;
     }
     img{
         display:block;
@@ -44,12 +54,23 @@ body{
 
 .wrapper-dettagli{
     background-color: #b8dae4;
+    width: 100%;
 }
 
 .descrizione {
+    padding-top:20px;
+
     p{
         line-height: 1.4;
         padding-bottom: 20px;
         color: $testo_prodotto;
+        background-color: #b8dae4;
+        padding-top: 15px;
+        font-size: 24px;
+    }
+
+    img{
+            width: 100%;
+            display:block;
     }
 }

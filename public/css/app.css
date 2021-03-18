@@ -8,6 +8,10 @@ body {
   font-family: arial;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .wrap-prodotti {
   background-image: url("../images/sfondo-pag-prodotti.jpg");
 }
@@ -17,10 +21,18 @@ body {
   margin: auto;
 }
 
+.dettaglio-prodotto {
+  background-color: #b8dae4;
+}
 .dettaglio-prodotto h1 {
   text-align: center;
-  padding-top: 30px;
-  color: #0f3d87;
+  padding-top: 15px;
+  color: #001942;
+  position: relative;
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .dettaglio-prodotto img {
   display: block;
@@ -29,12 +41,23 @@ body {
 
 .wrapper-dettagli {
   background-color: #b8dae4;
+  width: 100%;
 }
 
+.descrizione {
+  padding-top: 20px;
+}
 .descrizione p {
   line-height: 1.4;
   padding-bottom: 20px;
-  color: #0f3d87;
+  color: #002d73;
+  background-color: #b8dae4;
+  padding-top: 15px;
+  font-size: 24px;
+}
+.descrizione img {
+  width: 100%;
+  display: block;
 }
 
 .logo-la-molisana {
@@ -50,18 +73,21 @@ body {
   text-align: center;
   flex-wrap: wrap;
   list-style-type: none;
-  padding-top: 20px;
 }
 .lista-header li {
   display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .lista-header li a {
   text-decoration: none;
-  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 18px;
   font-weight: bold;
   color: #001942;
-  line-height: 1.5;
 }
 .lista-header li a:hover {
   background-color: #b3e5fc;
@@ -78,7 +104,7 @@ body {
 }
 .descrizione-prodotti h1 {
   text-transform: uppercase;
-  color: #0f3d87;
+  color: #002d73;
 }
 .descrizione-prodotti .card {
   width: calc(100% / 3);
@@ -116,6 +142,129 @@ body {
   padding-bottom: 15px;
 }
 
+.dettaglio-griglia {
+  table-layout: fixed;
+  width: 100%;
+  margin: auto;
+  color: #002d73;
+  border-collapse: collapse;
+  background-color: #b8dae4;
+}
+
+.text-size {
+  font-size: 40px;
+  font-family: "Teko", sans-serif;
+  font-weight: 200;
+}
+
+th {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  padding: 20px 20px 5px 20px;
+  line-height: 1;
+}
+
+.border-none {
+  border-left: none;
+}
+
+#freccia_destra, #freccia_sinistra {
+  visibility: visible;
+  position: fixed;
+  top: 38%;
+  background-color: #dfdfdf;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 65px;
+  height: 130px;
+}
+#freccia_destra i, #freccia_sinistra i {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+
+#freccia_sinistra {
+  right: 0;
+}
+
+#freccia_destra {
+  left: 0;
+}
+
+#foto_prev, #foto_next {
+  visibility: hidden;
+}
+#foto_prev img, #foto_next img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#foto_prev {
+  position: fixed;
+  top: 38%;
+  left: 0;
+  width: 250px;
+  height: 125px;
+  background-color: #000000c2;
+  transition: 2s;
+}
+#foto_prev img {
+  position: absolute;
+  left: 0;
+}
+
+#titolo_prev {
+  position: fixed;
+  top: 55%;
+  left: 0;
+  width: 250px;
+  height: 60px;
+  background-color: white;
+}
+#titolo_prev p {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  top: 30%;
+  right: 10%;
+  position: absolute;
+}
+
+#foto_next {
+  position: fixed;
+  top: 38%;
+  right: 0;
+  width: 250px;
+  height: 125px;
+  background-color: #000000c2;
+  transition: 2s;
+}
+#foto_next img {
+  position: absolute;
+  right: 0;
+}
+
+#titolo_next {
+  position: fixed;
+  top: 55%;
+  right: 0;
+  width: 250px;
+  height: 60px;
+  background-color: white;
+}
+#titolo_next p {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  top: 30%;
+  left: 10%;
+  position: absolute;
+}
+
 .footer-container {
   display: flex;
   color: #bab8b8;
@@ -136,7 +285,7 @@ body {
 .pastificio h3, .collezioni h3 {
   padding-bottom: 15px;
   padding-top: 15px;
-  color: #9a9a9a;
+  color: #0d2240;
 }
 .pastificio ul li, .collezioni ul li {
   list-style-type: none;
